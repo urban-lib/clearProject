@@ -13,6 +13,8 @@ type IServer interface {
 type HttpServer struct {
 }
 
+func (this HttpServer) Login(ctx *gin.Context)      {}
+func (this HttpServer) Logout(ctx *gin.Context)     {}
 func (this HttpServer) GetUser(ctx *gin.Context)    {}
 func (this HttpServer) GetAllUser(ctx *gin.Context) {}
 func (this HttpServer) CreateUser(ctx *gin.Context) {}
